@@ -1,0 +1,13 @@
+<p>Standard Users:</p>
+<hr />
+@for(user of users$ | async; track user.id) {
+<p>{{ user.name }}</p>
+}
+
+<br />
+
+<p>VIP Users:</p>
+<hr />
+@for(user of vipUsers$ | async; track user.id) {
+<p>{{ user.name }}</p>
+}

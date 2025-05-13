@@ -1,0 +1,29 @@
+<p>Can-deactivate works!</p>
+
+<br />
+<br />
+
+<p>
+  Form Status:
+  <span style="color:#d4260e"
+    >IS <strong>{{ isFormSaved ? '' : 'NOT' }}</strong> SAVED</span
+  >
+</p>
+
+<br />
+
+<form [formGroup]="userForm" (ngSubmit)="submit()">
+  <label for="first-name">First Name: </label>
+  <input type="text" id="first-name" formControlName="firstName" />
+  <button type="submit" [disabled]="!userForm.valid">Submit</button>
+</form>
+
+<div *ngIf="openConfirmDialog" class="can-deactivate-dialog">
+  <div class="can-deactivate-dialog-container">
+    <strong>Are you sure? </strong>
+    <div class="dialog-buttons">
+      <button (click)="onConfirmClick()">Confirm</button>
+      <button (click)="onCancelClick()">Cancel</button>
+    </div>
+  </div>
+</div>

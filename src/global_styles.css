@@ -1,0 +1,229 @@
+.roboto-thin {
+  font-family: 'Roboto', system-ui;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: 'Roboto', system-ui;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: 'Roboto', system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: 'Roboto', system-ui;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: 'Roboto', system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: 'Roboto', system-ui;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: 'Roboto', system-ui;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: 'Roboto', system-ui;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: 'Roboto', system-ui;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: 'Roboto', system-ui;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: 'Roboto', system-ui;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: 'Roboto', system-ui;
+  font-weight: 900;
+  font-style: italic;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: Roboto;
+  background: linear-gradient(180deg, #bbd2c5 0%, #536976 100%);
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+h1 {
+  color: black;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+p {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+nav {
+  margin: 2rem 0;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  background-color: whitesmoke;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in;
+  color: black;
+  font-weight: 600;
+}
+
+li a:hover {
+  background-color: white;
+}
+
+button[type='submit'] {
+  width: 100px;
+  height: 40px;
+  margin: 1rem 0;
+  border-radius: 4px;
+  background-color: lightblue;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'Roboto';
+  transition: background-color 0.3s ease-in;
+}
+
+button[type='submit']:hover {
+  background-color: lightcyan;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+input[type='text'] {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid grey;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+}
+
+form {
+  border: 1px solid lightgray;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.can-deactivate-dialog {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background-color: rgba(0 0 0 / 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.can-deactivate-dialog-container {
+  background-color: white;
+  width: 90vw;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.dialog-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.dialog-buttons button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: cornflowerblue;
+  border-radius: 4px;
+  color: white;
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dialog-buttons button:last-child {
+  background-color: #536976;
+}
+
+.link {
+  display: inline-block;
+  color: black;
+  margin: 0.5rem 0;
+}
